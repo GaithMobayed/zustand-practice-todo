@@ -26,5 +26,18 @@
     "globals": "^17.12.0",
     "tailwindcss": "^4.3.3",
     "vite": "^8.3.0"
-  }
+  },
+  "description": "",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaithMobayed/zustand-practice-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaithMobayed/zustand-practice-todo/issues"
+  },
+  "homepage": "https://github.com/GaithMobayed/zustand-practice-todo#readme"
 }
