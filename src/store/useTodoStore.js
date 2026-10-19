@@ -6,6 +6,7 @@ const useTodoStore = create(
     todos: [],
     addTask: (newTask) =>
       set((state) => ({ todos: [...state.todos, newTask] })),
+
     removeTask: (id) =>
       set((state) => {
         const newtodos = state.todos.filter((task) => task.id !== id);
@@ -13,6 +14,13 @@ const useTodoStore = create(
           todos: [...newtodos],
         };
       }),
+
+    editTask: (id, editedTask) =>
+      set((state) => ({
+        todos: state.todos.map((task) =>
+          task.id === id ? {  ...editedTask } : task,
+        ),
+      })),
 
     toggleDone: (id) =>
       set((state) => ({
